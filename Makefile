@@ -19,7 +19,7 @@ build:
 	EXTRA_LDFLAGS="$(EXTRA_LDFLAGS)" \
 	FFMPEG_ST="$(FFMPEG_ST)" \
 	FFMPEG_MT="$(FFMPEG_MT)" \
-		docker buildx build \
+		docker buildx build -f ./Dockerfile.joiner \
 			--build-arg EXTRA_CFLAGS \
 			--build-arg EXTRA_LDFLAGS \
 			--build-arg FFMPEG_MT \
