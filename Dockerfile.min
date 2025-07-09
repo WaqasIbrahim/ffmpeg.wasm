@@ -40,11 +40,12 @@ RUN bash -x /src/build.sh \
       --enable-encoder=copy \
       --enable-parser=aac \
       --enable-small \
-      --enable-demuxer=mov,mp4 \
+      --enable-demuxer=mov,mp4,webm,matroska \
       --enable-muxer=mp4 \
       --enable-protocol=file \
       --enable-decoder=aac \
       --enable-decoder=h264 \
+      --enable-decoder=vorbis,opus \
       --enable-libmp3lame \
       --enable-encoder=libmp3lame \
       --enable-muxer=mp3 \
