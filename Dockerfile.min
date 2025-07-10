@@ -49,7 +49,7 @@ RUN bash -x /src/build.sh \
       --enable-libmp3lame \
       --enable-encoder=libmp3lame \
       --enable-muxer=mp3 \
-      --enable-filter=aresample,scale,format,null,fps,anull,afifo,aformat
+      --enable-filter=aresample,scale,format,null,fps,anull,afifo,aformat,atrim,asetpts
 
 # Build ffmpeg.wasm
 FROM ffmpeg-builder AS ffmpeg-wasm-builder
